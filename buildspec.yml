@@ -10,9 +10,8 @@ phases:
       - npm install
   build:
     commands:
-      - echo Build error simulation!
-      - exit 1
-      - echo build -c production
+      - ng build -c production
+      - echoe "Build completed. "
     finally:
       - echo This is the finally block execution!
 artifacts:
